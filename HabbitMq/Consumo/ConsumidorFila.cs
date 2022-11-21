@@ -66,6 +66,7 @@ namespace HabbitMq.Consumo
 
         private void Notificar(MensagemModel mensagem)
         {
+
             _logger.LogInformation($"Origem - {mensagem.Origem}" +
                 $" Mensagem: {mensagem.Conteudo}" +
                 $" Data Criação: {mensagem.CriadoEm}");
